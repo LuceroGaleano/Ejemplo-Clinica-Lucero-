@@ -7,8 +7,8 @@ public class ClinicalHistory {
     protected String id;
     protected ArrayList<ClinicalRecord> clinicaRecord;
 
-    public ClinicalHistory(String id, ClinicalRecord clinicaRecord) {
+    public ClinicalHistory(String id, ArrayList<ClinicalRecord> clinicaRecord) {
         this.id = id;
-        this.clinicaRecord.add(clinicaRecord);
+        this.clinicaRecord = clinicaRecord;
     }
 }

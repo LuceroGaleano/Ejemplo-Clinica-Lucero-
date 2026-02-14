@@ -3,12 +3,14 @@ package Class;
 
 public abstract  class OrderItem {
     protected String orderId;
-    protected String ItemNumber;
-    protected ItemType type;
+    protected Item item;
 
-    public OrderItem(String orderId, String ItemNumber, ItemType type) {
+    public OrderItem(String orderId, Item item) {
         this.orderId = orderId;
-        this.ItemNumber = ItemNumber;
-        this.type = type;
-    } 
+        this.item = item;
+    }
+    
+    public Item getItem(){
+        return this.item;
+    }
 }

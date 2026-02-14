@@ -1,16 +1,16 @@
 
 package Class;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ClinicalRecord {
-    protected Date date;
+    protected LocalDate date;
     protected User doctor;
     protected String motive;
     protected String synthoms;
     protected String diagnosis;
 
-    public ClinicalRecord(Date date, User doctor, String motive, String synthoms, String diagnosis) {
+    public ClinicalRecord(LocalDate date, User doctor, String motive, String synthoms, String diagnosis) {
         this.date = date;
         this.doctor = doctor;
         this.motive = motive;

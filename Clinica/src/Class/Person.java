@@ -1,23 +1,28 @@
 
 package Class;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 
 public abstract class Person{
-   protected String name;
-   protected int document;
-   protected Date brithdate;
-   protected String adress;
-   protected int cellphone;
-   protected String email;
+   private String name;
+   private String document;
+   private LocalDate brithdate;
+   private String adress;
+   private String cellphone;
+   private String email;
 
-    public Person(String name, int document, Date brithdate, String adress, int cellphone, String email) {
+    public Person(String name, String document, LocalDate brithdate, String adress, String cellphone, String email) {
         this.name = name;
         this.document = document;
         this.brithdate = brithdate;
         this.adress = adress;
         this.cellphone = cellphone;
         this.email = email;
+    }
+    
+    public String getInfo(){
+        return " Name: " + this.name + "\n Documetn: " + this.document  +
+                "\n Cellphone: " + this.cellphone + "\n Email: " + this.adress;
     }
 }

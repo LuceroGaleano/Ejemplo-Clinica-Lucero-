@@ -14,4 +14,11 @@ public class Item {
         this.cost = cost;
         this.type = type;
     }
+    
+    public String getInfo(){
+        return "\n //--Item--//: " +
+        "\n Name: " + this.name +
+        "\n Cost: " + this.cost +
+        "\n Type: " + this.type;
+    }
 }

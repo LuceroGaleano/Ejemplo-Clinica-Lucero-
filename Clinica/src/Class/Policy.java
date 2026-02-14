@@ -1,18 +1,22 @@
 
 package Class;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Policy {
     protected Company company;
     protected String id;
     protected boolean status;
-    protected Date vigency;
+    protected LocalDate vigency;
 
-    public Policy(Company company, String id, boolean status, Date vigency) {
+    public Policy(Company company, String id, boolean status, LocalDate vigency) {
         this.company = company;
         this.id = id;
         this.status = status;
         this.vigency = vigency;
+    }
+    
+    public String getInfo(){
+        return this.company.name;
     }
 }

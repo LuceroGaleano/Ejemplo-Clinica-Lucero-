@@ -1,14 +1,18 @@
 
 package Class;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 
 public class Contact extends Person{
-    protected String relation;
+    private String relation;
 
-    public Contact(String relation, String name, int document, Date brithdate, String adress, int cellphone, String email) {
+    public Contact(String relation, String name, String document, LocalDate brithdate, String adress, String cellphone, String email) {
         super(name, document, brithdate, adress, cellphone, email);
         this.relation = relation;
+    }
+    
+    public String getRelation() {
+        return relation;
     }
 }
