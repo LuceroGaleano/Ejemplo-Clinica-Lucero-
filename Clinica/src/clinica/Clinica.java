@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Clinica {
 
     public static void main(String[] args) {
+        //Instanciando algunas clases para comprobar su funcionamiento
         User doctor = new User("JulianDoc", "Jul10", Role.Doctor, "Julian", "7158964785", LocalDate.of(1995, 10, 25), "Cra 34c # 89B", "301719347", "Julian@gmail.com");
         
         Company company1 = new Company("Live");
